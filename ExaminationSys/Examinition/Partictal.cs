@@ -81,15 +81,18 @@ namespace ExaminationSys.Examinition
                         mCQs[i].Answers.Answerid = t;
 
                         Console.WriteLine();
+                        
+
 
                     }
                 }
 
 
-
             } while (s != "y");
+
+            
         }
-       
+
 
 
         public override void ShowExam()
@@ -123,5 +126,15 @@ namespace ExaminationSys.Examinition
 
            
         }
+
+
+        public void Fun01()
+        {
+            CreateExam();
+            StartExam();
+            ShowExam();
+        }
+
+
     }
 }

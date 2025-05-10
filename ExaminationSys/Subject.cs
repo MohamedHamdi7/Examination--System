@@ -10,10 +10,9 @@ namespace ExaminationSys
 {
     internal class Subject
     {
-        public int SubId { get; set; }
-        public string SubName { get; set; }
+        //public int SubId { get; set; }
+        //public string SubName { get; set; }
 
-        Partictal partictal = new Partictal();
         public void EnterExam()
         {
             int x;
@@ -27,16 +26,20 @@ namespace ExaminationSys
                 if (x == 1)
                 {
 
-                    partictal.CreateExam();
-                    partictal.StartExam();
-                    partictal.ShowExam();
+                    Partictal partictal = new Partictal();
+                    //partictal.CreateExam();
+                    //partictal.StartExam();
+                    //partictal.ShowExam();
+                    partictal.Fun01();
                 }
                 else if (x == 2)
                 {
                     Final final = new Final();
-                    final.CreateExam();
-                    final.StartExam();
-                    final.ShowExam();
+                    //final.CreateExam();
+                    //final.StartExam();
+                    //final.ShowExam();
+
+                    final.Fun02();
                 }
             }while (flag==false ||x<=0 || x>2);
 

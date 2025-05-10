@@ -24,18 +24,18 @@ namespace ExaminationSys.Question0
             Mark = T;
             
             Console.WriteLine();
-            for(int i = 0; i < Answar.Length; i++)
+            for (int i = 0; i < Answar.Length; i++)
             {
-                Console.WriteLine($"please enter choice num{i+1}: ");
+                Console.WriteLine($"please enter choice num{i + 1}: ");
                 Answar[i] = Console.ReadLine();
                 Console.WriteLine();
             }
-            do
-            {
-                Console.WriteLine("please enter the right answer");
-            }while (!int.TryParse(Console.ReadLine(), out T) || T > 3 ||T<=0 );
-            Rightanswer = T;
-                
+                do
+                {
+                    Console.WriteLine("please enter the right answer");
+                } while (!int.TryParse(Console.ReadLine(), out T) || T > 3 || T <= 0);
+                Rightanswer = T;
+              
 
             
 

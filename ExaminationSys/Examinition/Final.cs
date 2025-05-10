@@ -158,5 +158,13 @@ namespace ExaminationSys.Examinition
 
 
         }
+
+
+        public void Fun02()
+        {
+         CreateExam();
+         StartExam();
+         ShowExam();
+        }
     }
 }
